@@ -177,7 +177,9 @@
         <div class="menu">
           <a href="#home">首页</a>
           <a href="#f1">F1比赛遥测</a>
-          <a href="#simhub">SimHub遥测</a>
+          <a href="#simhub">赛车模拟器遥测</a>
+          <a href="#more">更多支持</a>
+          
         </div>
         <div class="menu-button" onclick="toggleDrawer()">菜单</div>
         
@@ -188,48 +190,50 @@
       <div class="drawer-close" onclick="toggleDrawer()">✕ 关闭</div>
       <a href="#home" onclick="toggleDrawer()">首页</a>
       <a href="#f1" onclick="toggleDrawer()">F1比赛遥测</a>
-      <a href="#simhub" onclick="toggleDrawer()">SimHub遥测</a>
+      <a href="#simhub" onclick="toggleDrawer()">赛车模拟器遥测</a>
+      <a href="#more" onclick="toggleDrawer()">更多支持</a>
+      
     </div>
     
     <!-- 主视觉区域 -->
     <section id="home" class="hero">
       <h1>A Modern Home Device for Sim Racers and F1 Fans</h1>
-      <p>全球首款专为赛车发烧友DIY打造的智能终端</p>
+      <p style="font-size: 2.8rem;">全球首款专为赛车发烧友DIY打造的嵌入式设备</p>
     </section>
 
 <section id="simhub" style="padding: 4rem 2rem; text-align: center;">
-  <h2 style="font-size: 3rem; font-weight: bold;">SimHub 遥测功能</h2>
+  <h2 style="font-size: 3rem; font-weight: bold;">赛车模拟器遥测</h2>
 
   <!-- Swiper container -->
   <div class="swiper simhub-swiper" style="margin-top: 2rem;">
     <div class="swiper-wrapper">
       <div class="swiper-slide">
         <img src="simhub_01.png" style="max-width: 50%; border-radius: 10px;" />
-        <p style="font-size: 1.8rem;">实时显示赛车油门，刹车，离合数据，精准操控每个。</p>
+        <p style="font-size: 2.3rem;">实时显示赛车油门,刹车,离合,速度,方向盘角度,助力精准练习.</p>
       </div>
       <div class="swiper-slide">
         <img src="simhub_02.png" style="max-width: 50%; border-radius: 10px;" />
-        <p style="font-size: 1.8rem;">统一不同游戏UI的时间增益数据,带来一致性的赛车体验。</p>
+        <p style="font-size: 2.3rem;">统一不同游戏UI的时间增益数据,带来一致性的赛车体验.</p>
       </div>
       <div class="swiper-slide">
         <img src="simhub_03.png" style="max-width: 50%; border-radius: 10px;" />
-        <p style="font-size: 1.8rem;">多平台支持：Assetto Corsa, iRacing, F1 等。</p>
+        <p style="font-size: 2.3rem;">多平台支持：Assetto Corsa, iRacing,ACC, F1,R3E...</p>
       </div>
       <div class="swiper-slide">
         <img src="simhub_04.png" style="max-width: 50%; border-radius: 10px;" />
-        <p style="font-size: 1.8rem;">多平台支持：Assetto Corsa, iRacing, F1等,。</p>
+        <p style="font-size: 2.3rem;">轮胎数据实时监控,提前规划操控策略.</p>
       </div>
     </div>
     <!-- 分页导航 -->
     <div class="swiper-pagination"></div>
     
   </div>
-    <a href="manual-simhub.pdf" class="btn" style="margin-top: 2rem; display: inline-block;">接入SimHub使用说明</a>
+    <a href="manual-simhub.pdf" class="btn" style="margin-top: 2rem; display: inline-block;">需接入SimHub，前往配置</a>
   
 </section>
 
 <section id="f1" style="padding: 4rem 2rem; text-align: center;">
-  <h2 style="font-size: 3rem; font-weight: bold;">产品特点</h2>
+  <h2 style="font-size: 3rem; font-weight: bold;">F1比赛遥测</h2>
   <!-- Swiper container -->
   <div class="swiper f1-swiper" style="margin-top: 2rem;">
     <div class="swiper-wrapper">
@@ -249,7 +253,25 @@
    <a href="manual-simhub.pdf" class="btn" style="margin-top: 2rem; display: inline-block;">SpeedIM 电子说明书</a>
   
 </section>
+<section id="more" style="padding: 4rem 2rem; text-align: center; background: #fff;">
+  <h2 style="font-size: 2.8rem; font-weight: bold; margin-bottom: 2rem;">获取更多支持</h2>
+  <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 4rem;">
+    
+    <div style="text-align: center;">
+      <img src="wxapp.png" alt="微信小程序二维码" style="width: 200px; height: 200px; border: 1px solid #ccc; border-radius: 12px;">
+      <p style="margin-top: 1rem; font-size: 1.6rem;">扫码进入微信小程序</p>
+    </div>
 
+    <div style="text-align: center;">
+      <img src="wx_no.png" alt="添加微信好友二维码" style="width: 200px; height: 200px; border: 1px solid #ccc; border-radius: 12px;">
+      <p style="margin-top: 1rem; font-size: 1.6rem;">扫码添加微信好友</p>
+    </div>
+    <div style="text-align: center;">
+      <img src="taobao.png" alt="淘宝店铺" style="width: 200px; height: 200px; border: 1px solid #ccc; border-radius: 12px;">
+      <p style="margin-top: 1rem; font-size: 1.6rem;">淘宝店铺</p>
+    </div>
+  </div>
+</section>
     <!-- 页脚 -->
     <footer style="padding: 2rem; text-align: center; background: #f5f5f5;">
       <p style="font-size: 1.8rem;">&copy; 2025 ApexRacing. All Rights Reserved.</p>
