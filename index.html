@@ -4,6 +4,7 @@
   
 
     <title>SpeedIM - 全球首款专为赛车发烧友DIY打造的智能终端</title>
+	<link rel="stylesheet" href="https://unpkg.com/swiper@10/swiper-bundle.min.css" />
 
     <!-- 如有统计或其他脚本，可继续添加 -->
     <style>
@@ -131,16 +132,18 @@
         margin: 1rem 0 2rem;
       }
 
-      .hero .btn {
-        background: #fff;
-        color: #e3342f;
-        padding: 1rem 2rem;
-        font-size: 2rem;
-        border: none;
-        border-radius: 5px;
-        text-decoration: none;
-        font-weight: bold;
-      }
+	.btn {
+	  background: #fff;
+	  color: #e3342f;
+	  padding: 1rem 2rem;
+	  font-size: 2rem;
+	  border: none;
+	  border-radius: 5px;
+	  text-decoration: none;
+	  font-weight: bold;
+	  display: inline-block;
+	  transition: background 0.3s ease, color 0.3s ease;
+	}
 
       @media (max-width: 768px) {
         .menu {
@@ -158,6 +161,8 @@
         document.getElementById('drawer').classList.toggle('open');
       }
     </script>
+    
+    
   </head>
 
   <body>
@@ -190,23 +195,89 @@
     <section id="home" class="hero">
       <h1>A Modern Home Device for Sim Racers and F1 Fans</h1>
       <p>全球首款专为赛车发烧友DIY打造的智能终端</p>
-      <a href="#manual" class="btn">查看使用说明书</a>
     </section>
 
-    <!-- 根据需要继续添加其他内容区域，比如产品特点、图片展示、联系我们等 -->
-    <section id="simhub" style="padding: 4rem 2rem; text-align: center;">
-      <h2 style="font-size: 3rem; font-weight: bold;">产品特点</h2>
-      <p style="font-size: 1.8rem; margin-top: 1rem;">这里介绍产品的各项特点与优势。</p>
-    </section>
+<section id="simhub" style="padding: 4rem 2rem; text-align: center;">
+  <h2 style="font-size: 3rem; font-weight: bold;">SimHub 遥测功能</h2>
 
-    <section id="f1" style="padding: 4rem 2rem; text-align: center;">
-      <h2 style="font-size: 3rem; font-weight: bold;">产品特点</h2>
-      <p style="font-size: 1.8rem; margin-top: 1rem;">这里介绍产品的各项特点与优势。</p>
-    </section>
+  <!-- Swiper container -->
+  <div class="swiper simhub-swiper" style="margin-top: 2rem;">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="simhub_01.png" style="max-width: 90%; border-radius: 10px;" />
+        <p style="font-size: 1.8rem;">实时显示赛车转速、档位与速度，兼容 SimHub。</p>
+      </div>
+      <div class="swiper-slide">
+        <img src="simhub_02.png" style="max-width: 90%; border-radius: 10px;" />
+        <p style="font-size: 1.8rem;">支持DIY仪表盘，自定义布局与LED视效。</p>
+      </div>
+      <div class="swiper-slide">
+        <img src="simhub_03.png" style="max-width: 90%; border-radius: 10px;" />
+        <p style="font-size: 1.8rem;">多平台支持：Assetto Corsa, iRacing, F1 等。</p>
+      </div>
+      <div class="swiper-slide">
+        <img src="simhub_04.png" style="max-width: 90%; border-radius: 10px;" />
+        <p style="font-size: 1.8rem;">多平台支持：Assetto Corsa, iRacing, F1 等。</p>
+      </div>
+    </div>
+    <!-- 分页导航 -->
+    <div class="swiper-pagination"></div>
+    
+  </div>
+    <a href="manual-simhub.pdf" class="btn" style="margin-top: 2rem; display: inline-block;">SimHub使用配置</a>
+  
+</section>
+
+<section id="f1" style="padding: 4rem 2rem; text-align: center;">
+  <h2 style="font-size: 3rem; font-weight: bold;">产品特点</h2>
+  <!-- Swiper container -->
+  <div class="swiper f1-swiper" style="margin-top: 2rem;">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <p style="font-size: 1.8rem;">⚡ 实时显示遥测数据：速度、轮胎温度、DRS 状态等</p>
+      </div>
+      <div class="swiper-slide">
+        <p style="font-size: 1.8rem;">🌐 支持 SimHub + UDP 遥测协议接入 F1 系列游戏</p>
+      </div>
+      <div class="swiper-slide">
+        <p style="font-size: 1.8rem;">📈 支持 DIY 屏显布局，快速上手，无需编程</p>
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+    
+  </div>
+   <a href="manual-simhub.pdf" class="btn" style="margin-top: 2rem; display: inline-block;">SpeedIM 电子说明书</a>
+  
+</section>
+
     <!-- 页脚 -->
     <footer style="padding: 2rem; text-align: center; background: #f5f5f5;">
       <p style="font-size: 1.8rem;">&copy; 2025 ApexRacing. All Rights Reserved.</p>
     </footer>
-    
+    <script src="https://unpkg.com/swiper@10/swiper-bundle.min.js"></script>
+
+	<script>
+	  new Swiper('.simhub-swiper', {
+	    loop: true,
+	    pagination: {
+	      el: '.simhub-swiper .swiper-pagination',
+	      clickable: true,
+	    },
+	    autoplay: {
+	      delay: 4000,
+	    }
+	  });
+	
+	  new Swiper('.f1-swiper', {
+	    loop: true,
+	    pagination: {
+	      el: '.f1-swiper .swiper-pagination',
+	      clickable: true,
+	    },
+	    autoplay: {
+	      delay: 5000,
+	    }
+	  });
+	</script>
   </body>
 </html>
