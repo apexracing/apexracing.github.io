@@ -83,18 +83,18 @@
       }
 
       /* Mobile Drawer Menu */
-      .drawer {
-        position: fixed;
-        top: 0;
-        right: -100%;
-        width: 80%;
-        height: 100%;
-        background: #fff;
-        padding: 2rem;
-        box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
-        transition: right 0.3s ease;
-        z-index: 999;
-      }
+	.drawer {
+	    position: fixed;
+	    top: 0;
+	    right: -100%;
+	    width: 80%;
+	    height: 100%;
+	    background: rgba(0, 0, 0, 0.5); /* 半透明黑色 */
+	    padding: 2rem;
+	    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
+	    transition: right 0.3s ease;
+	    z-index: 999;
+	}
 
       .drawer.open {
         right: 0;
@@ -105,7 +105,7 @@
         font-size: 2.2rem;
         margin-bottom: 2rem;
         text-decoration: none;
-        color: #000;
+        color: #FFF;
         font-weight: bold;
       }
 
@@ -203,6 +203,9 @@
 	  #more p {
 	    font-size: 1.4rem !important;
 	  }
+	  .logo {
+	    display: none;
+	  }
 	}
 	      
     </style>
@@ -220,7 +223,7 @@
     <header>
       <nav class="nav">
         <!-- LOGO 图片 -->
-        <a href="#">
+        <a href="#" class="logo">
           <img src="logo.png" alt="Logo">
         </a>
         <!-- 大号菜单 -->
