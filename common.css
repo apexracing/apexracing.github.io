@@ -1,0 +1,200 @@
+    <!-- 如有统计或其他脚本，可继续添加 -->
+    <style>
+      /* 基本字体设置 */
+      body {
+        font-family: 'Inter', sans-serif;
+        margin: 0;
+        padding: 0;
+        background: #ffffff;
+        color: #000;
+      }
+      /* 大号菜单与导航样式 */
+      .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.5rem 2rem;
+        background: #ffffff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+      .nav a {
+        text-decoration: none;
+        color: #000;
+        font-size: 2rem; /* 大字号 */
+        font-weight: bold;
+        margin: 0 1rem;
+      }
+      .nav img {
+        height: 80px; /* 较大LOGO */
+      }
+      /* 主视觉区 */
+      .hero {
+        text-align: center;
+        padding: 6rem 2rem;
+        background: #D41219; /* 采用红色 */
+        color: #fff;
+        position: relative;
+      }
+      .hero h1 {
+        font-size: 4rem; /* 大标题 */
+        font-weight: 900;
+        margin-bottom: 1rem;
+      }
+      .hero p {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+      }
+      .hero .btn {
+        font-size: 2rem;
+        padding: 1rem 2rem;
+        background: #fff;
+        color: #D41219;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 5px;
+      }
+       .menu {
+        display: flex;
+        gap: 2rem;
+      }
+
+      .menu a {
+        text-decoration: none;
+        font-size: 2rem;
+        color: #000;
+        font-weight: bold;
+      }
+
+      .menu-button {
+        display: none;
+        font-size: 2rem;
+        font-weight: bold;
+        cursor: pointer;
+      }
+
+      /* Mobile Drawer Menu */
+	.drawer {
+	    position: fixed;
+	    top: 0;
+	    right: -100%;
+	    width: 80%;
+	    height: 100%;
+	    background: rgba(0, 0, 0, 0.8); /* 半透明黑色 */
+	    padding: 2rem;
+	    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
+	    transition: right 0.3s ease;
+	    z-index: 999;
+	}
+
+      .drawer.open {
+        right: 0;
+      }
+
+      .drawer a {
+        display: block;
+        font-size: 2.2rem;
+        margin-bottom: 2rem;
+        text-decoration: none;
+        color: #FFF;
+        font-weight: bold;
+      }
+
+      .drawer-close {
+        color: #FFF;
+        font-size: 2rem;
+        text-align: right;
+        margin-bottom: 2rem;
+        cursor: pointer;
+      }
+
+      /* Hero Section */
+      .hero {
+        padding: 6rem 2rem;
+        text-align: center;
+        background: #e3342f;
+        color: white;
+      }
+
+      .hero h1 {
+        font-size: 4rem;
+        font-weight: 900;
+      }
+
+      .hero p {
+        font-size: 2rem;
+        margin: 1rem 0 2rem;
+      }
+
+	.btn {
+	  background: #fff;
+	  color: #e3342f;
+	  padding: 1rem 2rem;
+	  font-size: 2rem;
+	  border: none;
+	  border-radius: 5px;
+	  text-decoration: none;
+	  font-weight: bold;
+	  display: inline-block;
+	  transition: background 0.3s ease, color 0.3s ease;
+	}
+
+      @media (max-width: 768px) {
+        .menu {
+          display: none;
+        }
+
+        .menu-button {
+          display: block !important;
+          color: #D41219;
+        }
+      }
+      @media (max-width: 768px) {
+	  .hero h1 {
+	    font-size: 2.4rem;
+	  }
+	
+	  .hero p {
+	    font-size: 1.6rem;
+	  }
+	
+	  .btn {
+	    font-size: 1.6rem;
+	    padding: 0.8rem 1.5rem;
+	  }
+	
+	  section h2 {
+	    font-size: 2.2rem !important;
+	  }
+	
+	  section p {
+	    font-size: 1.4rem !important;
+	  }
+	
+	  .swiper-slide img {
+	    max-width: 80% !important;
+	  }
+	
+	  .nav a {
+	    font-size: 1.6rem;
+	  }
+	
+	  .menu-button {
+	    font-size: 1.8rem;
+	  }
+	
+	  footer p {
+	    font-size: 1.4rem;
+	  }
+	
+	  #more img {
+	    width: 100px !important;
+	    height: 100px !important;
+	  }
+	
+	  #more p {
+	    font-size: 1.4rem !important;
+	  }
+	  .logo {
+	    display: none;
+	  }
+	}

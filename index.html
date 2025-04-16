@@ -6,210 +6,8 @@
       <meta charset="UTF-8">
 	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	  <title>SpeedIM</title>
-	<link rel="stylesheet" href="https://unpkg.com/swiper@10/swiper-bundle.min.css" />
-
-    <!-- 如有统计或其他脚本，可继续添加 -->
-    <style>
-      /* 基本字体设置 */
-      body {
-        font-family: 'Inter', sans-serif;
-        margin: 0;
-        padding: 0;
-        background: #ffffff;
-        color: #000;
-      }
-      /* 大号菜单与导航样式 */
-      .nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 1.5rem 2rem;
-        background: #ffffff;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      }
-      .nav a {
-        text-decoration: none;
-        color: #000;
-        font-size: 2rem; /* 大字号 */
-        font-weight: bold;
-        margin: 0 1rem;
-      }
-      .nav img {
-        height: 80px; /* 较大LOGO */
-      }
-      /* 主视觉区 */
-      .hero {
-        text-align: center;
-        padding: 6rem 2rem;
-        background: #D41219; /* 采用红色 */
-        color: #fff;
-        position: relative;
-      }
-      .hero h1 {
-        font-size: 4rem; /* 大标题 */
-        font-weight: 900;
-        margin-bottom: 1rem;
-      }
-      .hero p {
-        font-size: 2rem;
-        margin-bottom: 2rem;
-      }
-      .hero .btn {
-        font-size: 2rem;
-        padding: 1rem 2rem;
-        background: #fff;
-        color: #D41219;
-        text-decoration: none;
-        font-weight: bold;
-        border-radius: 5px;
-      }
-       .menu {
-        display: flex;
-        gap: 2rem;
-      }
-
-      .menu a {
-        text-decoration: none;
-        font-size: 2rem;
-        color: #000;
-        font-weight: bold;
-      }
-
-      .menu-button {
-        display: none;
-        font-size: 2rem;
-        font-weight: bold;
-        cursor: pointer;
-      }
-
-      /* Mobile Drawer Menu */
-	.drawer {
-	    position: fixed;
-	    top: 0;
-	    right: -100%;
-	    width: 80%;
-	    height: 100%;
-	    background: rgba(0, 0, 0, 0.8); /* 半透明黑色 */
-	    padding: 2rem;
-	    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
-	    transition: right 0.3s ease;
-	    z-index: 999;
-	}
-
-      .drawer.open {
-        right: 0;
-      }
-
-      .drawer a {
-        display: block;
-        font-size: 2.2rem;
-        margin-bottom: 2rem;
-        text-decoration: none;
-        color: #FFF;
-        font-weight: bold;
-      }
-
-      .drawer-close {
-        color: #FFF;
-        font-size: 2rem;
-        text-align: right;
-        margin-bottom: 2rem;
-        cursor: pointer;
-      }
-
-      /* Hero Section */
-      .hero {
-        padding: 6rem 2rem;
-        text-align: center;
-        background: #e3342f;
-        color: white;
-      }
-
-      .hero h1 {
-        font-size: 4rem;
-        font-weight: 900;
-      }
-
-      .hero p {
-        font-size: 2rem;
-        margin: 1rem 0 2rem;
-      }
-
-	.btn {
-	  background: #fff;
-	  color: #e3342f;
-	  padding: 1rem 2rem;
-	  font-size: 2rem;
-	  border: none;
-	  border-radius: 5px;
-	  text-decoration: none;
-	  font-weight: bold;
-	  display: inline-block;
-	  transition: background 0.3s ease, color 0.3s ease;
-	}
-
-      @media (max-width: 768px) {
-        .menu {
-          display: none;
-        }
-
-        .menu-button {
-          display: block !important;
-          color: #D41219;
-        }
-      }
-      @media (max-width: 768px) {
-	  .hero h1 {
-	    font-size: 2.4rem;
-	  }
-	
-	  .hero p {
-	    font-size: 1.6rem;
-	  }
-	
-	  .btn {
-	    font-size: 1.6rem;
-	    padding: 0.8rem 1.5rem;
-	  }
-	
-	  section h2 {
-	    font-size: 2.2rem !important;
-	  }
-	
-	  section p {
-	    font-size: 1.4rem !important;
-	  }
-	
-	  .swiper-slide img {
-	    max-width: 80% !important;
-	  }
-	
-	  .nav a {
-	    font-size: 1.6rem;
-	  }
-	
-	  .menu-button {
-	    font-size: 1.8rem;
-	  }
-	
-	  footer p {
-	    font-size: 1.4rem;
-	  }
-	
-	  #more img {
-	    width: 100px !important;
-	    height: 100px !important;
-	  }
-	
-	  #more p {
-	    font-size: 1.4rem !important;
-	  }
-	  .logo {
-	    display: none;
-	  }
-	}
-	      
-    </style>
+	  <link rel="stylesheet" href="https://unpkg.com/swiper@10/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="common.css" />
      <script>
       function toggleDrawer() {
         document.getElementById('drawer').classList.toggle('open');
@@ -318,22 +116,29 @@
     
     <div style="text-align: center;">
       <img src="wxapp.png" alt="微信小程序二维码" style="width: 200px; height: 200px; border: 1px solid #ccc; border-radius: 12px;">
-      <p style="margin-top: 1rem; font-size: 1.6rem;">扫码进入微信小程序</p>
+      <p style="margin-top: 1rem; font-size: 1.2rem;">扫码进入微信小程序</p>
     </div>
 
     <div style="text-align: center;">
       <img src="wx_no.png" alt="添加微信好友二维码" style="width: 200px; height: 200px; border: 1px solid #ccc; border-radius: 12px;">
-      <p style="margin-top: 1rem; font-size: 1.6rem;">扫码添加微信好友</p>
+      <p style="margin-top: 1rem; font-size: 1.2rem;">扫码添加微信好友</p>
     </div>
     <div style="text-align: center;">
       <img src="taobao.png" alt="淘宝店铺" style="width: 200px; height: 200px; border: 1px solid #ccc; border-radius: 12px;">
-      <p style="margin-top: 1rem; font-size: 1.6rem;">淘宝店铺</p>
+      <p style="margin-top: 1rem; font-size: 1.2rem;">淘宝店铺</p>
     </div>
   </div>
 </section>
     <!-- 页脚 -->
     <footer style="padding: 2rem; text-align: center; background: #f5f5f5;">
-      <p style="font-size: 1.8rem;">&copy; 2025 ApexRacing. All Rights Reserved.</p>
+      <p style="font-size: 1.5rem;">&copy; 2025 ApexRacing. All Rights Reserved.</p>
+      <strong>非官方声明</strong><br>
+       <p style="font-size: 1.0rem;">  本终端（[英文全称:SPEEDIM]）以及附属网站,小程序APP均为F1赛车迷以赛车模拟器游戏玩家定制,与以下组织及赛事不存在任何形式的商业关联、授权关系或官方认可：<br>
+      - Formula One Licensing B.V<br>
+      - FIA Formula One World Championship™<br>
+      注册商标：F1®、FORMULA ONE®、GRAND PRIX® 及相关赛事名称、车队标志、车手形象<br>
+      - Iracing,AssettoCorsa,RaceRoom等相关游戏品牌<br>
+      </p>
     </footer>
     <script src="https://unpkg.com/swiper@10/swiper-bundle.min.js"></script>
 
