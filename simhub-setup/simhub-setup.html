@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SimHub 接入配置</title>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 2rem;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.8rem;
+      margin-bottom: 3rem;
+      color: #D41219;
+    }
+
+    .step-container {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    .step {
+      display: grid;
+      grid-template-columns: 1fr 1fr 2fr;
+      gap: 1rem;
+      background: #fff;
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      align-items: center;
+    }
+
+    .step img {
+      width: 100%;
+      max-width: 160px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+
+    .step-title {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: #D41219;
+    }
+
+    .step-desc {
+      font-size: 1.6rem;
+      line-height: 1.6;
+    }
+
+    @media (max-width: 768px) {
+      .step {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+
+      .step img {
+        margin: 0 auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>SimHub 接入配置步骤</h1>
+
+  <div class="step-container">
+
+    <div class="step">
+      <div class="step-title">步骤 1</div>
+      <img src="step1.png" alt="步骤1示意图">
+      <div class="step-desc">下载并安装 SimHub 软件，并确保连接到你的赛车游戏。</div>
+    </div>
+
+    <div class="step">
+      <div class="step-title">步骤 2</div>
+      <img src="step2.png" alt="步骤2示意图">
+      <div class="step-desc">在 SimHub 中启用 UDP 输出，并设置 IP 为设备的地址，端口为指定的监听端口。</div>
+    </div>
+
+    <div class="step">
+      <div class="step-title">步骤 3</div>
+      <img src="step3.png" alt="步骤3示意图">
+      <div class="step-desc">在设备 UI 中选择 “SimHub 模式”，并点击连接按钮以开始监听遥测数据。</div>
+    </div>
+
+    <!-- 可继续添加更多步骤 -->
+
+  </div>
+
+</body>
+</html>
