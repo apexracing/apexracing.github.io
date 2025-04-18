@@ -225,6 +225,43 @@
 		    max-width: 100%;
 		  }
 		}
+		
+		.game{
+		   padding: 3rem 2rem;
+		   max-width: 800px; /* 限制最大宽度 */
+		  margin: 0 auto;    /* 居中 */
+		  box-sizing: border-box;
+		}
+		.game h1 {
+		  font-size: 2.5rem;
+		  margin-bottom: 1rem;
+		  text-align: center;
+		}
+		.scroll-wrapper {
+		  overflow: hidden;
+		  width: 100%;
+		  position: relative;
+		}
+		
+		.scroll-content {
+		  display: flex;
+		  gap: 40px; /* 图片之间的间距 */
+		  animation: scroll-left 30s linear infinite;
+		  align-items: center;
+		}
+		
+		.scroll-content img {
+		  max-height: 120px;
+		}
+		
+		@keyframes scroll-left {
+		  0% {
+		    transform: translateX(0);
+		  }
+		  100% {
+		    transform: translateX(-50%);
+		  }
+		}
 	</style>
 </head>
 <body>
@@ -245,10 +282,19 @@
       <h1>SimHub 接入配置步骤</h1>
       <p style="font-size: 2.8rem;">教您如何接入喜欢的游戏遥测</p>
     </section>
+    <section class="game">
+        <h1>此配置文件已测试通过的游戏</h1>
+    	<div class="scroll-wrapper">
+	      <div class="scroll-content">
+	        <img src="games/game1.png" />
+	        <img src="games/game2.png" />
+	        <img src="games/game3.png" />
+	      </div>
+	    </div>
+    </section>
     <!-- 功能模块展示 -->
 	<section id="functionality" class="function-section">
-	
-		<div class="function-card">
+	  <div class="function-card">
 	    <div class="function-header">
 	      <h3>更新固件至v1.0.5(暂未开放更新)及以上</h3>
 	    </div>
