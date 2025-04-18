@@ -9,6 +9,9 @@
 	    :root {
 	      --primary-color: #D41219;
 	    }
+	    strong{
+	    	color: var(--primary-color);
+	    }
 		/* 配网方法部分 */
 		.section {
 		  padding: 3rem 2rem;
@@ -289,7 +292,7 @@
 	        <div class="swiper-pagination"></div>
 	      </div>
 	      <p><span class="circle-num">1</span>从设备底部菜单指示条,向上滑动弹出菜单选项,进入<strong>设置菜单</strong></p>
-	      <p><span class="circle-num">2</span>设置手机连接到 WiFi：SPEEDIM_XXXX</p>
+	      <p><span class="circle-num">2</span>设置手机连接到 WiFi：SPEEDIM_XXXX,<strong>密码</strong>显示在设备屏幕上</p>
 	      <p><span class="circle-num">3</span>手机浏览器打开 <strong>192.168.4.1</strong></p>
 	      <p><span class="circle-num">4</span>输入 WiFi 名称与密码，点击连接</p>
 	    </div>
@@ -309,15 +312,22 @@
 	    <div class="desc-block large">
 	      <img src="telemetry_menu.png.png" alt="比赛排名数据 | Live Telemetry" />
 	      <p>
-	      	进入菜单中的功能后,再次向上滑出菜单,会出现红色<strong style="color:var(--primary-color)">IGN</strong>点火开关,长按3秒后,开始连接服务器并进行实时数据更新。
+	      	<span class="circle-num">1</span>进入菜单中的功能后,再次向上滑出菜单,会出现红色<strong style="color:var(--primary-color)">IGN</strong>点火开关,长按3秒后,开始连接服务器并进行实时数据更新。
 	      	
 	      </p>
 	      <p>
-	      	首次为NO SIGNAL状态,与服务器进行首次连接后系统会缓存上一次排名数据。
+	      	<span class="circle-num">2</span>首次为NO SIGNAL状态,与服务器进行首次连接后系统会缓存上一次排名数据。
 	      </p>
 	      <p>
-	      	每次退出当前功能,如需实时数据遥测,需要再次长按<strong style="color:var(--primary-color)">IGN</strong>点火开关启动实时数据更新。
-	      
+	      	<span class="circle-num">3</span>每次退出当前功能,如需实时数据遥测,需要再次长按<strong style="color:var(--primary-color)">IGN</strong>点火开关启动实时数据更新。
+	      </p>
+	      <p>
+	      <h4>固件更新到v1.0.4后，此功能会显示WIFI信号接收强度,如果为绿色或蓝色表示信号较好.
+	      </br>
+	      由于遥测服务器在国外可能出现国际线路或服务器维护中,造成短时连接不上.
+	      </br>
+	      请多试几次或等几小时后再尝试.
+	      </h4>
 	      </p>
 	    </div>
 	  </div>
@@ -330,11 +340,19 @@
 	      <h3>赛道影院|Circuit Cinema</h3>
 	    </div>
 	    <div class="desc-block large">
+	    	      <img src="convertio.png"/>
+	    
 	      <p>
-	      <a href="https://convertio.co/zh/mp4-mjpeg/"><strong>ConvertIo文件转换器</strong></a>进行视频格式转换, 存储位置: sd卡/"视频"文件夹。具体转换参数配置如下图:
+	      <span class="circle-num">1</span>使用
+	      <a href="https://convertio.co/zh/mp4-mjpeg/">
+	      <strong>ConvertIo文件转换器</strong>
+	      </a>
+	      按照图片上参数设置,上传您的视频转换成mjpeg格式视频,修改文件后缀为<strong>XXX.mjpeg</strong>
 	      </p>
-	      <img src="convertio.png"/>
-	      
+	      <p>
+      	      <span class="circle-num">2</span>
+      	      使用读卡器,将转换后的<strong>XXX.mjpeg</strong>存储到sd卡/"视频"文件夹。
+	      </p>
 	    </div>
 	  </div>
 	  
@@ -369,8 +387,9 @@
 	      <h3>冠军头盔主题|Champion Helmet</h3>
 	    </div>
 	    <div class="desc-block large">
+	      <img src="func4.png"/>
 	      <p>
-	      
+	      	下滑屏幕切换不同主题，所有界面颜色将随之变化。
 	      </p>
 	    </div>
 	  </div>
