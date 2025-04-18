@@ -5,6 +5,117 @@
   <title>SimHub 接入配置</title>
   <link rel="stylesheet" href="https://unpkg.com/swiper@10/swiper-bundle.min.css" />
   <link rel="stylesheet" href="../common.css" />
+  
+  		.function-section {
+		  padding: 3rem 2rem;
+		  background-color: #f5f5f5;
+		}
+		
+		.function-card {
+		  background: #fff;
+		  border-radius: 16px;
+		  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+		  margin-bottom: 3rem;
+		  padding: 2rem;
+		}
+		
+		/* 封面图 + 标题在一行 */
+		.function-header {
+		  display: flex;
+		  align-items: center;
+		  gap: 1.5rem;
+		  margin-bottom: 1.5rem;
+		  padding: 1rem 1.5rem;
+	      background-color: var(--primary-color);
+		  border-radius: 12px;
+		}
+		
+		.function-header img.cover-img {
+		  width: 120px;
+		  height: 120px;
+		  object-fit: cover;
+		  border-radius: 50%;
+		}
+		
+		.function-header h3 {
+		  font-size: 2.2rem;
+		  color: white;
+		  margin: 0;
+		}
+		
+		/* 描述图 + 文字说明 */
+		.desc-block {
+		  display: flex;
+		  flex-direction: row;
+		  gap: 1.5rem;
+		  align-items: center;
+		}
+		
+		.desc-block img {
+		  width: 100px;
+		  height: 100px;
+		  object-fit: contain;
+		  border-radius: 10px;
+		}
+		
+		.desc-block p {
+		  font-size: 1.6rem;
+		  flex: 1;
+		  margin: 0;
+		}
+		.desc-block.large {
+			flex-direction: column;
+			  align-items: center; /* 使子元素水平居中 */
+			  text-align: left; /* 保持文本左对齐（如果希望文本也居中则改为center） */
+			  max-width: 800px;
+			  margin: 0 auto; /* 容器自身水平居中 */
+		}
+		.desc-block.large img {
+		  width: 100%;
+		  max-width: 800px;
+		  height: auto;
+		  border-radius: 12px;
+		  margin-bottom: 1rem;
+		  display: block; /* 使图片可以应用margin auto */
+		  margin-left: auto;
+		  margin-right: auto;
+		}
+		
+		.desc-block.large p {
+		  width: 100%; /* 确保段落宽度填满容器 */
+		  text-align: left; /* 保持文本正常排列 */
+		}
+		/* 响应式支持 */
+		@media (max-width: 768px) {
+		  .function-header {
+		    flex-direction: column;
+		    align-items: flex-start;
+		  }
+		
+		  .desc-block {
+		    flex-direction: column;
+		    align-items: flex-start;
+		  }
+		
+		  .function-header img.cover-img {
+		    width: 100%;
+		    height: auto;
+		  }
+
+		  .function-header h3 {
+		    font-size: 1.8rem;
+		  }
+		
+		  .desc-block p {
+		    font-size: 1.4rem;
+		  }
+		  .desc-block.large img {
+		    max-width: 100%;
+		  }
+		  .desc-block.large img {
+		    max-width: 100%;
+		  }
+		}
 </head>
 <body>
     <!-- 导航栏 -->
