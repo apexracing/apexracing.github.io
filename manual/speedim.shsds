@@ -12,7 +12,7 @@
   "EditorExpanded": true,
   "Name": "Custom Serial device",
   "Description": "Serial device",
-  "LastErrorDate": "2025-04-13T18:32:01.6123035+08:00",
+  "LastErrorDate": "2025-04-19T20:32:24.6486445+08:00",
   "LastErrorMessage": null,
   "IsFreezed": false,
   "SettingsBuilder": {
@@ -65,6 +65,15 @@
       },
       "IsEnabled": true,
       "MaximumFrequency": 20
+    },
+    {
+      "Message": {
+        "JSExt": 0,
+        "Interpreter": 1,
+        "Expression": "function getGame() {\r\n    return JSON.stringify({\"GAMEINFO\": $prop('DataCorePlugin.CurrentGame')}) + \"\\n\";\r\n}\r\nreturn getGame();"
+      },
+      "IsEnabled": true,
+      "MaximumFrequency": 0
     }
   ]
 }
