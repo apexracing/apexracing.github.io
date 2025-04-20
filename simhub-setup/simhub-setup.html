@@ -326,6 +326,7 @@
 	        <img src="games/game2.png" />
 	        <img src="games/game3.png" />
 	        <img src="games/game4.png" />
+	        <img src="games/game5.png" />
 	      </div>
 	    </div>
     </section>
@@ -333,12 +334,13 @@
 	<section id="functionality" class="function-section">
 	  <div class="function-card">
 	    <div class="function-header">
-	      <h3>更新固件至v1.0.5(暂未开放更新,待测试完)及以上</h3>
+	      <h3>SIMHUB遥测功能开启前置条件</h3>
 	    </div>
 	    <div class="desc-block large">
-	      <img src=""/>
-	      <p><span class="circle-num">1</span>打开小程序,进入Race菜单->切换到模拟器模式,设备会自动重启.</strong></p>
-	      <p><span class="circle-num">2</span>原<strong>声浪可视化|仪表盘</strong><img src="menu1.png"  style="vertical-align: middle; display: inline; height: auto; width: auto;" />功能,变更为<strong>simhub游戏模式</strong><img src="menu0.png"  style="vertical-align: middle; display: inline; height: auto; width: auto;" /></p>
+	      <img src="step0.png" style="max-width:300px"/>
+	      <p><span class="circle-num">1</span>升级固件到v1.0.5及以上</strong></p>
+	      <p><span class="circle-num">2</span>打开小程序->开启simhub设备.</strong></p>
+	      <p><span class="circle-num">3</span>原<strong>声浪可视化|仪表盘</strong><img src="menu1.png"  style="vertical-align: middle; display: inline; height: auto; width: auto;" />功能,变更为<strong>simhub游戏模式</strong><img src="menu0.png"  style="vertical-align: middle; display: inline; height: auto; width: auto;" /></p>
 	    </div>
 	  </div>
 	  
@@ -402,17 +404,41 @@
 	  
 	   <div class="function-card">
 	    <div class="function-header">
-	      <h3>其它事项及说明</h3>
+	      <h3>ACC游戏说明</h3>
 	    </div>
 	    <div class="desc-block large">
 	       <img src="acc.png"/>
 	       <p>
 	      	<span class="circle-num">1</span> ACC方向盘角度:需要修改脚本保持和游戏中赛车方向盘角度,直驱方向盘角度设置一致.
 	       </p>
-	       	<p>
-	      	<span class="circle-num">1</span> 
-	      	其它还未通过测试的游戏,也可以自行编辑脚本找到合适的方向盘角度匹配函数,可以参考现在的脚本.</br>
-	      	通过将直驱方向盘角度打到<strong>90度</strong>后,观测<strong>插入属性</strong>里实时遥测数据,基本上所有游戏都能推测出计算公式(都是一些三角函数或*/某个系数计算公式).
+	    </div>
+	  </div>
+	  
+	  <div class="function-card">
+	    <div class="function-header">
+	      <h3>F1 24游戏说明</h3>
+	    </div>
+	    <div class="desc-block large">
+	       <img src="f124.jpg"/>
+	       <p>
+	      	<span class="circle-num">1</span>需要游戏设置中开启UDP遥测,如上图所示.
+	       </p>
+	       <p>
+	       <span class="circle-num">2</span>F1 24没有<strong>增益时间(Gain Time)</strong>遥测输出，目前为模拟计算值
+	       </p>
+	       <p>
+	       <span class="circle-num">3</span>F1 24<strong>方向盘角度</strong>400,请设置您的模拟器硬件驱动方向盘角度为400.
+	       </p>
+	    </div>
+	  </div>
+	  
+	  <div class="function-card">
+	    <div class="function-header">
+	      <h3>Iracing 游戏说明</h3>
+	    </div>
+	    <div class="desc-block large">
+	       <p>
+	        IRacing没有<strong>胎压</strong>遥测数据，当前为模拟计算值.
 	       </p>
 	    </div>
 	  </div>
