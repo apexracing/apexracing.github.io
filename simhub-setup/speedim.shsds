@@ -12,7 +12,7 @@
   "EditorExpanded": true,
   "Name": "Custom Serial device",
   "Description": "Serial device",
-  "LastErrorDate": "2025-04-13T18:32:01.6123035+08:00",
+  "LastErrorDate": "2025-04-20T11:43:09.0996146+08:00",
   "LastErrorMessage": null,
   "IsFreezed": false,
   "SettingsBuilder": {
@@ -30,8 +30,8 @@
       "Message": {
         "JSExt": 0,
         "Interpreter": 1,
-        "Expression": "function getSpeed() {\r\n    var speed = $prop('SpeedKmh');\r\n    speed = format(speed, '0');\r\n    return Number(speed);\r\n}\r\n\r\nfunction getGear() {\r\n    return $prop('Gear');\r\n}\r\n\r\nfunction getBrake() {\r\n    var brake = $prop('Brake');\r\n    brake = format(brake, '0');\r\n    return Number(brake);\r\n}\r\n\r\nfunction getThrottle() {\r\n    var throttle = $prop('Throttle');\r\n    throttle = format(throttle, '0');\r\n    return Number(throttle);\r\n}\r\n\r\nfunction getClutch() {\r\n    var clutch = $prop('Clutch');\r\n    clutch = format(clutch, '0');\r\n    return Number(clutch);\r\n}\r\n\r\nfunction getSteerAngle() {\r\n    var game = $prop('DataCorePlugin.CurrentGame');\r\n    var steer = 0;\r\n    switch (game) {\r\n        case 'AssettoCorsa': \r\n            steer = isnull($prop('GameRawData.Physics.SteerAngle'), 0) * Math.PI / 180 * 2 * 10000;\r\n            break;\r\n        case 'IRacing': \r\n            steer = isnull($prop('GameRawData.Telemetry.SteeringWheelAngle'), 0) * -58;\r\n            break;\r\n        case 'AssettoCorsaCompetizione': \r\n            steer = isnull($prop('GameRawData.Physics.SteerAngle'), 0) * ACC_Steer_InGame / 2;\r\n            break;\r\n        case 'F12025': \r\n        case 'F12024': \r\n            steer = isnull($prop('DataCorePlugin.GameRawData.PlayerCarTelemetryData.m_steer'), 0) * 470 / 2 * SteeringSaturationF1 / 100;\r\n            break;\r\n        case 'RRRE': \r\n            steer = isnull($prop('GameRawData.SteerInputRaw'), 0) * isnull($prop('GameRawData.SteerWheelRangeDegrees'), 0) / 2;\r\n            break;\r\n    }\r\n    steer = format(steer, '0');\r\n    return Number(steer);\r\n}\r\n\r\nfunction getCarData() {\r\n    var currentData = {\r\n        \"speed\": getSpeed(),\r\n        \"clutch\": getClutch(),\r\n        \"throttle\": getThrottle(),\r\n        \"brake\": getBrake(),\r\n        \"gear\": getGear(),\r\n        \"steer_angle\": getSteerAngle()\r\n    };\r\n \r\n    return JSON.stringify({\"CAR_DATA\": currentData}) + \"\\n\";\r\n}\r\nreturn getCarData();",
-        "PreExpression": "/**已测试通过的游戏:R3E,iRacing,AC,ACC**/\r\nconst ACC_Steer_InGame=800 //ACC需要自定义;这里和游戏配置,直驱方向盘度数3者保持一致\r\n\r\n/**如果需求其它游戏支持，可以参考下边脚本getSteerAngle函数的实现去扩展。**/\r\n\r\n\r\n\r\n\r\nfunction formatLapTime(time) {\r\n    // SimHub 专用时间格式化方式\r\n    return format(time, 'm\\\\:ss\\\\:fff');\r\n}\r\n\r\n"
+        "Expression": "function getSpeed() {\r\n    var speed = $prop('SpeedKmh');\r\n    speed = format(speed, '0');\r\n    return Number(speed);\r\n}\r\n\r\nfunction getGear() {\r\n    return $prop('Gear');\r\n}\r\n\r\nfunction getBrake() {\r\n    var brake = $prop('Brake');\r\n    brake = format(brake, '0');\r\n    return Number(brake);\r\n}\r\n\r\nfunction getThrottle() {\r\n    var throttle = $prop('Throttle');\r\n    throttle = format(throttle, '0');\r\n    return Number(throttle);\r\n}\r\n\r\nfunction getClutch() {\r\n    var clutch = $prop('Clutch');\r\n    clutch = format(clutch, '0');\r\n    return Number(clutch);\r\n}\r\n\r\nfunction getSteerAngle() {\r\n    var game = $prop('DataCorePlugin.CurrentGame');\r\n    var steer = 0;\r\n    switch (game) {\r\n        case 'AssettoCorsa': \r\n            steer = isnull($prop('GameRawData.Physics.SteerAngle'), 0) * Math.PI / 180 * 2 * 10000;\r\n            break;\r\n        case 'IRacing': \r\n            steer = isnull($prop('GameRawData.Telemetry.SteeringWheelAngle'), 0) * -58;\r\n            break;\r\n        case 'AssettoCorsaCompetizione': \r\n            steer = isnull($prop('GameRawData.Physics.SteerAngle'), 0) * ACC_Steer_InGame / 2;\r\n            break;\r\n        case 'F12025': \r\n        case 'F12024': \r\n            steer = isnull($prop('DataCorePlugin.GameRawData.PlayerCarTelemetryData.m_steer'), 0) *400/2;\r\n            break;\r\n        case 'RRRE': \r\n            steer = isnull($prop('GameRawData.SteerInputRaw'), 0) * isnull($prop('GameRawData.SteerWheelRangeDegrees'), 0) / 2;\r\n            break;\r\n    }\r\n    steer = format(steer, '0');\r\n    return Number(steer);\r\n}\r\n\r\nfunction getCarData() {\r\n    var currentData = {\r\n        \"speed\": getSpeed(),\r\n        \"clutch\": getClutch(),\r\n        \"throttle\": getThrottle(),\r\n        \"brake\": getBrake(),\r\n        \"gear\": getGear(),\r\n        \"steer_angle\": getSteerAngle()\r\n    };\r\n \r\n    return JSON.stringify({\"CAR_DATA\": currentData}) + \"\\n\";\r\n}\r\nreturn getCarData();",
+        "PreExpression": "/**已测试通过的游戏:R3E,iRacing,AC,ACC**/\r\nconst ACC_Steer_InGame=800 //ACC需要自定义;这里和游戏配置,直驱方向盘度数3者保持一致\r\n/**如果需求其它游戏支持，可以参考下边脚本getSteerAngle函数的实现去扩展。**/\r\n\r\n\r\n\r\n\r\nfunction formatLapTime(time) {\r\n    // SimHub 专用时间格式化方式\r\n    return format(time, 'm\\\\:ss\\\\:fff');\r\n}\r\n\r\n"
       },
       "IsEnabled": true,
       "MaximumFrequency": 30
@@ -40,7 +40,7 @@
       "Message": {
         "JSExt": 0,
         "Interpreter": 1,
-        "Expression": "function getLapData() {\r\n   var game = $prop('DataCorePlugin.CurrentGame');\r\n    var delta = 0;\r\n    switch (game) {\r\n    \tcase 'AssettoCorsa':\r\n    \t\r\n    \t\tdelta =isnull($prop('PersistantTrackerPlugin.EstimatedLapTime_SessionBestBasedSimhub_EstimatedDelta'),0);\r\n    \t\tbreak;\r\n        case 'IRacing': \r\n            delta = isnull(NewRawData().Telemetry[\"LapDeltaToBestLap\"], 0);\r\n            break;\r\n        default:\r\n           delta=isnull($prop('DeltaToSessionBest'),0)\r\n        }\r\n    var currentData = {\r\n        \"delta\":delta,\r\n        \"last\": formatLapTime($prop('LastLapTime')),\r\n        \"best\": formatLapTime($prop('BestLapTime'))\r\n    };\r\n    return JSON.stringify({\"LAP_DATA\": currentData}) + \"\\n\";\r\n}\r\nreturn getLapData()",
+        "Expression": "function getLapData() {\r\n   var game = $prop('DataCorePlugin.CurrentGame');\r\n    var delta = 0;\r\n    switch (game) {\r\n    \tcase 'AssettoCorsa':\r\n    \t\r\n    \t\tdelta =isnull($prop('PersistantTrackerPlugin.EstimatedLapTime_SessionBestBasedSimhub_EstimatedDelta'),0);\r\n    \t\tbreak;\r\n        case 'IRacing': \r\n            delta = isnull(NewRawData().Telemetry[\"LapDeltaToBestLap\"], 0);\r\n            break;\r\n        case 'F12025': \r\n        case 'F12024':\r\n        \tdelta = parseFloat($prop('DataCorePlugin.CustomExpression.CompactDelta'));\r\n        \tbreak;\r\n        default:\r\n           delta=isnull($prop('DeltaToSessionBest'),0)\r\n        }\r\n    var currentData = {\r\n        \"delta\":delta,\r\n        \"last\": formatLapTime($prop('LastLapTime')),\r\n        \"best\": formatLapTime($prop('BestLapTime'))\r\n    };\r\n    return JSON.stringify({\"LAP_DATA\": currentData}) + \"\\n\";\r\n}\r\nreturn getLapData()",
         "PreExpression": "\r\nfunction formatLapTime(time) {\r\n    // SimHub 专用时间格式化方式\r\n    return format(time, 'm\\\\:ss\\\\:fff');\r\n}"
       },
       "IsEnabled": true,
@@ -65,6 +65,15 @@
       },
       "IsEnabled": true,
       "MaximumFrequency": 20
+    },
+    {
+      "Message": {
+        "JSExt": 0,
+        "Interpreter": 1,
+        "Expression": "function getGame() {\r\n    return JSON.stringify({\"GAMEINFO\": $prop('DataCorePlugin.CurrentGame')}) + \"\\n\";\r\n}\r\nreturn getGame();"
+      },
+      "IsEnabled": true,
+      "MaximumFrequency": 0
     }
   ]
 }
