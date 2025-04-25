@@ -2,6 +2,7 @@
     window.i18nTranslations = {
       en: {
         translation: {
+          "title":"SpeedIM: F1 Telemetry & Sim Racing Data in Real-Time",
 	      "menu_close": "CLOSE",
 	      "menu_home": "HOME",
 	      "menu_f1": "F1 LIVETIME",
@@ -28,6 +29,7 @@
       },
       zh: {
         translation: {
+          "title":"SpeedIM - F1赛车遥测显示设备 | 模拟赛车数据终端 | 实时赛道数据监测",
           "menu_close":"关闭",
           "menu_home": "首页",
           "menu_f1":"F1比赛遥测",
