@@ -78,6 +78,13 @@ window.i18nTranslations = {
 			    "title": "Sonic Visualization | Revbeat Music",
 			    "s1": "Play any music and watch as we dynamically transform sound waves into stunning real-time spectrograms - a mesmerizing fusion of audio and visual that redefines your listening experience!"
 			  },
+			    "function5": {
+			    "title": "Telemetry Dashboard | T-CAR Dashboard",
+			    "s1": "Open the menu and enter",
+			    "s2": "function",
+			    "s3": "Swipe up again to reveal menu, long press",
+			    "s4": "for over 3 seconds"
+			  },
 				"convertio_img": "convertio_en.png",
 				"convertio_url": "https://convertio.co/mp4-mjpeg/",
 				"adobe_express_img": "adobe_express_en.png",
@@ -163,6 +170,13 @@ window.i18nTranslations = {
 				"function4":{
 					"title":"声浪可视化|Revbeat Music",
 					s1:"试着放首音乐，它将实时捕捉节奏与频率波动，化声音为炫酷频谱，带来前所未有的视听盛宴！",				
+				},
+				"function5":{
+					"title":"遥测仪表盘 |T-CAR Dashboard",
+					s1:"打开菜单,进入",
+					s2:"功能",
+					s3:"再次向上划出菜单，长按",
+					s4:"3秒以上",					
 				},
 				"convertio_img": "convertio_cn.png",
 				"convertio_url": "https://convertio.co/cn/mp4-mjpeg/",
