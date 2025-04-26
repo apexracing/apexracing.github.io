@@ -61,6 +61,24 @@ window.i18nTranslations = {
 			    "s4": "Each time you exit this function, if you need ignition again",
 			    "s6": "Note: F1 telemetry requires heavy data transmission. For best performance, keep the device within 2-3 meters of your WiFi router or mobile hotspot (embedded devices have lower signal power)."
 			  },
+			  "function2": {
+			    "title": "Track Cinema | Circuit Cinema",
+			    "s1": "Use ",
+			    "s2": "Follow the parameters shown in the image, upload your video and convert it to MJPEG format, then rename the file extension to ",
+			    "s3": "Using a card reader, copy the video file ",
+			    "s4": "to the device/SD card/\"Videos\" folder."
+			  },
+			  "function3": {
+			    "title": "Pit Stop Gallery | Pit Gallery",
+			    "s1": "Use ",
+			    "s2": "Follow the parameters shown in the image and upload your PNG format image, resizing it to 360×360 pixels.",
+			    "s3": "Using a card reader or WeChat Mini Program, copy the image ",
+			    "s4": "to the device/SD card/\"Pictures\" folder."
+			  },
+			  "function4": {
+			    "title": "Sonic Visualization | Revbeat Music",
+			    "s1": "Play any music and watch as we dynamically transform sound waves into stunning real-time spectrograms - a mesmerizing fusion of audio and visual that redefines your listening experience!"
+			  },
 				"convertio_img": "convertio_en.png",
 				"convertio_url": "https://convertio.co/mp4-mjpeg/",
 				"adobe_express_img": "adobe_express_en.png",
@@ -128,6 +146,24 @@ window.i18nTranslations = {
 					s4:"每次退出当前功能,如需实时数据遥测,需要再次长按IGN",
 					s6:"由于F1遥测需要传输大量数据,设备离WIFI路由器或手机热点最佳范围在2-3米以内(嵌入式设备信号功率较低)",
 					
+				},
+				"function2":{
+					"title":"赛道影院|Circuit Cinema",
+					s1:"使用",
+					s2:"按照图片上参数设置,上传您的视频转换成mjpeg格式视频,修改文件后缀为",
+					s3:"使用读卡器,将视频文件",
+					s4:"复制到设备/sd卡/\"视频\"文件夹。",					
+				},
+				"function3":{
+					"title":"PIT STOP画廊|Pit Gallery",
+					s1:"使用",
+					s2:"按照图片上参数设置并上传您的png格式图片,修改大小为360*360像素.",
+					s3:"使用读卡器或微信小程序将图片",
+					s4:"复制到设备/sd卡/\"图片\"文件夹。",					
+				},
+				"function4":{
+					"title":"声浪可视化|Revbeat Music",
+					s1:"试着放首音乐，它将实时捕捉节奏与频率波动，化声音为炫酷频谱，带来前所未有的视听盛宴！",				
 				},
 				"convertio_img": "convertio_cn.png",
 				"convertio_url": "https://convertio.co/cn/mp4-mjpeg/",
