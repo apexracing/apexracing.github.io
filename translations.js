@@ -27,7 +27,6 @@ window.i18nTranslations = {
 			"footer_desc1": "This terminal ([Full Name: SPEEDIM]), along with its affiliated websites and mini-program apps, is exclusively customized for F1 racing enthusiasts and racing simulator game players. It has no form of commercial association, authorization relationship, or official endorsement with the following organizations and events:",
 			"footer_desc2": "Registered trademarks: F1®, FORMULA ONE®, GRAND PRIX® and related event names, team logos, driver likenesses",
 			"footer_desc3": "- Related gaming brands including iRacing, Assetto Corsa, RaceRoom, etc.",
-
 			"speedim_manual_main": {
 			    "title": "SpeedIM Feature Guide",
 			    "desc": "Discover the unique features and usage of SpeedIM",
