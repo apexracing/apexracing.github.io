@@ -299,6 +299,10 @@
 	  s.parentNode.insertBefore(hm, s);
 	})();
 	</script>
+	  <!-- 使用 jsDelivr CDN -->
+	  <script src="https://cdn.jsdelivr.net/npm/i18next@21.9.0/dist/umd/i18next.min.js"></script>
+	  <script src="https://cdn.jsdelivr.net/npm/i18next-browser-languagedetector@6.1.0/dist/umd/i18nextBrowserLanguageDetector.min.js"></script>
+	  <script src="../translations.js"></script>
 </head>
 <body>
     <!-- 导航栏 -->
@@ -445,18 +449,75 @@
 	  </div>
 	  
 	</section>
- 	<!-- 页脚 -->
+    <!-- 页脚 -->
     <footer style="padding: 2rem; text-align: center; background: #f5f5f5;color:#333">
       <p style="font-size: 1.2rem;font-weight:600;">&copy; 2025 ApexRacing. All Rights Reserved.</p>
-      <strong>非官方声明</strong><br>
-       <p style="font-size: 0.8rem;font-weight:300;">  本终端（[英文全称:SPEEDIM]）以及附属网站,小程序APP均为F1赛车迷以赛车模拟器游戏玩家定制,与以下组织及赛事不存在任何形式的商业关联、授权关系或官方认可：<br>
-      - Formula One Licensing B.V<br>
-      - FIA Formula One World Championship™<br>
-      注册商标：F1®、FORMULA ONE®、GRAND PRIX® 及相关赛事名称、车队标志、车手形象<br>
-      - Iracing,AssettoCorsa,RaceRoom等相关游戏品牌<br>
+      <strong data-i18n="footer_title"></strong><br>
+      <p style="font-size: 0.8rem;font-weight:300;">  
+      <span data-i18n="footer_desc1"></br></span>
+      <span>- Formula One Licensing B.V</br></span>
+      <span>- FIA Formula One World Championship™</br></span>
+      <span data-i18n="footer_desc2"></br></span>
+      <span data-i18n="footer_desc3"></br></span>
       </p>
     </footer>
 
-<script src="https://unpkg.com/swiper@10/swiper-bundle.min.js"></script>
+<script>
+  // 初始化配置
+  const initOptions = {
+    resources: window.i18nTranslations,
+    fallbackLng: 'en',
+    debug: true,
+    detection: {
+      order: ['querystring', 'cookie', 'navigator', 'htmlTag'],
+      lookupQuerystring: 'lng',
+      lookupCookie: 'i18next', // cookie名称
+      caches: ['cookie'],  // 将语言偏好存储在cookie中
+      cookieMinutes: 7 * 24 * 60, // 7天有效期
+      htmlTag: document.documentElement
+    }
+  };
+
+  // 初始化i18next
+  i18next
+    .use(i18nextBrowserLanguageDetector)
+    .init(initOptions, function(err, t) {
+      if (err) console.error(err);
+      updateContent();
+    });
+
+  function updateContent() {
+    document.querySelectorAll('[data-i18n]').forEach(element => {
+      const key = element.getAttribute('data-i18n');
+      element.innerHTML = i18next.t(key);
+    });
+    // 更新图片src和链接href
+  document.querySelectorAll('[data-i18n^="[src]"]').forEach(el => {
+    const key = el.getAttribute('data-i18n').replace('[src]', '');
+    el.src = i18next.t(key);
+  });
+  
+  document.querySelectorAll('[data-i18n^="[href]"]').forEach(el => {
+    const key = el.getAttribute('data-i18n').replace('[href]', '');
+    el.href = i18next.t(key);
+  });
+    // 更新所有链接的URL参数
+    document.querySelectorAll('a').forEach(link => {
+      if (link.hostname === window.location.hostname) {
+        const url = new URL(link.href);
+        url.searchParams.set('lng', i18next.language);
+        link.href = url.toString();
+      }
+    });
+  }
+  
+  document.getElementById('changeLanguage').addEventListener('click', () => {
+    const currentLang = i18next.language;
+    const newLang = currentLang.startsWith('zh') ? 'en' : 'zh';
+    i18next.changeLanguage(newLang, () => {
+      updateContent();
+    });
+  });
+</script>
 </body>
 </html>
