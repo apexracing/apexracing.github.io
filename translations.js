@@ -85,6 +85,23 @@ window.i18nTranslations = {
 			    "s3": "Swipe up again to reveal menu, long press",
 			    "s4": "for over 3 seconds"
 			  },
+			  "function6": {
+			    "title": "Driver Messages | Driver Quotes",
+			    "s1": "Use the WeChat Mini Program to edit all text content (including team names)."
+			  },
+			  "function7": {
+			    "title": "Race Calendar | GP Chrono",
+			    "s1": "Swipe left/right to toggle between",
+			    "s2": "local time",
+			    "s3": "and",
+			    "s4": "race time", 
+			    "s5": "The annual race calendar is typically updated around February-March."
+			  },
+			  "function8": {
+			    "title": "Helmet Themes | Champion Skin",
+			    "s1": "Swipe down to switch themes - all interface colors will update accordingly.",
+			    "s2": "Swipe left/right to cycle through different emoticons (auto-rotation enabled by default)."
+			  },
 				"convertio_img": "convertio_en.png",
 				"convertio_url": "https://convertio.co/mp4-mjpeg/",
 				"adobe_express_img": "adobe_express_en.png",
@@ -177,6 +194,24 @@ window.i18nTranslations = {
 					s2:"功能",
 					s3:"再次向上划出菜单，长按",
 					s4:"3秒以上",					
+				},
+				"function6":{
+					"title":"车手语录动画 | Driver Quotes",
+					s1:"使用微信小程序,可对所有文字内容进行编辑(包括车队名字)."			
+				},
+				"function7":{
+					"title":"赛历时钟表盘 | GP Chrono",
+					s1:"左右滑动屏幕,可切换",
+					s2:"本地时钟",
+					s3:"和",
+					s4:"比赛时间",
+					s5:"每年比赛日历的更新时间大概在2,3月份。",							
+				},			
+				"function8":{
+					"title":"冠军头盔主题|Champion Helmet",
+					s1:"下滑屏幕切换不同主题，所有界面颜色将随之变化。",
+					s2:"左右滑动屏幕可切换不同的表情(默认自动切换)。"			
+							
 				},
 				"convertio_img": "convertio_cn.png",
 				"convertio_url": "https://convertio.co/cn/mp4-mjpeg/",
