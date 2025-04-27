@@ -57,7 +57,7 @@ window.i18nTranslations = {
 			    "s1": "After entering the function from the menu, swipe up again to reveal the IGN(ignition) button ",
 			    "s2": "Press and hold for 3 seconds to connect to the f1 server.",
 			    "s3": "Initially displays 'NO SIGNAL'. After first successful server connection, the system will cache the previous ranking data",
-			    "s4": "Each time you exit this function, if you need ignition again",
+			    "s4": "Each time you exit this function, if you need long press IGN(ignition) again",
 			    "s6": "Note: F1 telemetry requires heavy data transmission. For best performance, keep the device within 2-3 meters of your WiFi router or mobile hotspot (embedded devices have lower signal power)."
 			  },
 			  "function2": {
