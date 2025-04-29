@@ -110,7 +110,10 @@ window.i18nTranslations = {
 			"simhub_setup_manual":{
 				title:"SimHub Connection and Configuration Steps",
 				desc:"Guides you through connecting your favorite game telemetry",
-				games:"Verified Games for This Profile"
+				games:"Verified Games for This Profile",
+				base_step:{
+					title:"Device and Software Setup"
+				}
 			}
 		}
 	},
@@ -226,7 +229,10 @@ window.i18nTranslations = {
 			"simhub_setup_manual":{
 				title:"SimHub 接入配置步骤",
 				desc:"教您如何接入喜欢的游戏遥测",
-				games:"此配置文件已测试通过的游戏"
+				games:"此配置文件已测试通过的游戏",
+				base_step:{
+					title:"SIMHUB遥测功能开启前置条件"
+				}
 			}
 		}
 	}
