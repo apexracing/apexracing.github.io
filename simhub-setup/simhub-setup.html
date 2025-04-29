@@ -312,18 +312,18 @@
           <img src="../logo.png" alt="Logo">
         </a>
         <div class="menu">
-          <a href="../index.html">首页</a>
+          <a href="../index.html" data-i18n="menu_home"></a>
         </div>
       </nav>
     </header>
 
     <!-- 主视觉区域 -->
     <section class="hero">
-      <h1>SimHub 接入配置步骤</h1>
-      <p style="font-size: 2.8rem;">教您如何接入喜欢的游戏遥测</p>
+      <h1 data-i18n="simhub_setup_manual.title"></h1>
+      <p style="font-size: 2.8rem;" data-i18n="simhub_setup_manual.desc"></p>
     </section>
     <section class="game">
-        <h1>此配置文件已测试通过的游戏</h1>
+        <h1 data-i18n="simhub_setup_manual.games"></h1>
     	<div class="scroll-wrapper">
 	      <div class="scroll-content">
 	        <img src="games/game1.png" />
@@ -492,15 +492,15 @@
       element.innerHTML = i18next.t(key);
     });
     // 更新图片src和链接href
-  document.querySelectorAll('[data-i18n^="[src]"]').forEach(el => {
-    const key = el.getAttribute('data-i18n').replace('[src]', '');
-    el.src = i18next.t(key);
-  });
+	  document.querySelectorAll('[data-i18n-img]').forEach(el => {
+	    const key = el.getAttribute('data-i18n-img');
+	    el.src = i18next.t(key);
+	  });
   
-  document.querySelectorAll('[data-i18n^="[href]"]').forEach(el => {
-    const key = el.getAttribute('data-i18n').replace('[href]', '');
-    el.href = i18next.t(key);
-  });
+	  document.querySelectorAll('[data-i18n-href]').forEach(el => {
+	    const key = el.getAttribute('data-i18n-href');
+	    el.href = i18next.t(key);
+	  });
     // 更新所有链接的URL参数
     document.querySelectorAll('a').forEach(link => {
       if (link.hostname === window.location.hostname) {
@@ -510,14 +510,7 @@
       }
     });
   }
-  
-  document.getElementById('changeLanguage').addEventListener('click', () => {
-    const currentLang = i18next.language;
-    const newLang = currentLang.startsWith('zh') ? 'en' : 'zh';
-    i18next.changeLanguage(newLang, () => {
-      updateContent();
-    });
-  });
+
 </script>
 </body>
 </html>

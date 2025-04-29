@@ -106,6 +106,11 @@ window.i18nTranslations = {
 				"convertio_url": "https://convertio.co/mp4-mjpeg/",
 				"adobe_express_img": "adobe_express_en.png",
 				"adobe_express_url": "https://www.adobe.com/express/feature/image/resize",
+			},
+			"simhub_setup_manual":{
+				title:"SimHub Connection and Configuration Steps",
+				desc:"Guides you through connecting your favorite game telemetry",
+				games:"Verified Games for This Profile"
 			}
 		}
 	},
@@ -217,8 +222,12 @@ window.i18nTranslations = {
 				"convertio_url": "https://convertio.co/cn/mp4-mjpeg/",
 				"adobe_express_img": "adobe_express_cn.png",
 				"adobe_express_url": "https://www.adobe.com/cn/express/feature/image/resize",
+			},
+			"simhub_setup_manual":{
+				title:"SimHub 接入配置步骤",
+				desc:"教您如何接入喜欢的游戏遥测",
+				games:"此配置文件已测试通过的游戏"
 			}
-
 		}
 	}
 };
