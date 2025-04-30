@@ -124,6 +124,45 @@ window.i18nTranslations = {
 				    s9: "Sonic Visualization | Revbeat Music",
 				    s10: "function will be changed to",
 				    s11: "SimHub Game",
+				},
+				step1: {
+					title: "Step 1",
+					s1: "Add plugin (Add/Remove features) -> Custom serial devices"
+				},
+				step2: {
+					title: "Step 2",
+					s1: "Add a new serial device"
+				},
+				step3: {
+					title: "Step 3",
+					s1: "Download",
+					s2: "the compressed package and extract the speedim.shsds configuration file.",
+					s3: "Import settings and select the speedim.shsds file downloaded in the previous step."
+				},
+				step4: {
+				title: "Step 4",
+					s1: "Select the Serial port dropdown -> Choose the last of the two ApexRacing SpeedIM COM ports.",
+					s2: "Turn on the device switch"
+				},
+				step5: {
+					title: "ACC Game Instructions",
+					s1: "ACC steering wheel angle: The script needs to be modified to match the in-game car's steering wheel angle and the direct-drive wheel base settings."
+				},
+				step6: {
+					title: "F1 24 Game Instructions",
+					s1: "Enable UDP telemetry in the game settings as shown above.",
+					s2: "F1 24 does not have",
+					s3: "Gain Time",
+					s4: "telemetry output; currently, it is a simulated calculated value.",
+					s5: "F1 24",
+					s6: "steering wheel angle",
+					s7: "is 400. Please set your simulator hardware driver steering wheel angle to 400."
+				},
+				step7: {
+					title: "iRacing Game Instructions",
+					s1: "iRacing does not have",
+					s2: "tire pressure",
+					s3: "telemetry data; currently, it is a simulated calculated value."
 				}
 			}
 		}
@@ -254,7 +293,46 @@ window.i18nTranslations = {
 					s9:"声浪可视化|仪表盘",
 					s10:"功能,变更为",	
 					s11:"simhub游戏模式",																							
-				}
+				},
+				step1:{
+					title:"步骤一",
+					s1:"添加插件(Add/Remove features)->自定义串口设备(Custom serial devices)"
+				},
+				step2:{
+					title:"步骤二",
+					s1:"添加一个新串口设备(Add new serial device)"
+				},
+				step3:{
+					title:"步骤三",
+					s1:"下载",
+					s2:"压缩包,解压出speedim.shsds配置文件.",
+					s3:"导入设置(Import settings),选择上一步下载的speedim.shsds文件."
+				},
+				step4:{
+					title:"步骤四",
+					s1:"选择串口(Serial port)下拉框->2个ApexRacing SpeedIM的COM端口,选择最后一个.",
+					s2:"开启设备开关"
+				},
+				step5:{
+					title:"ACC游戏说明",
+					s1:"ACC方向盘角度:需要修改脚本保持和游戏中赛车方向盘角度,直驱方向盘角度设置一致."
+				},
+				step6:{
+					title:"F1 24游戏说明",
+					s1:"需要游戏设置中开启UDP遥测,如上图所示.",
+					s2:"F1 24没有",
+					s3:"增益时间(Gain Time)",
+					s4:"遥测输出，目前为模拟计算值",
+					s5:"F1 24",
+					s6:"方向盘角度",
+					s7:"400,请设置您的模拟器硬件驱动方向盘角度为400.",
+				},
+				step7:{
+					title:"IRacing 游戏说明",
+					s1:"IRacing没有",
+					s2:"胎压",
+					s3:"遥测数据，当前为模拟计算值.",
+				},
 			}
 		}
 	}
