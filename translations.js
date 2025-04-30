@@ -112,7 +112,18 @@ window.i18nTranslations = {
 				desc:"Guides you through connecting your favorite game telemetry",
 				games:"Verified Games for This Profile",
 				base_step:{
-					title:"Device and Software Setup"
+					title:"Device and Software Setup",
+					s1: "Update firmware to v1.0.5 or above",
+				    s2: "Download",
+				    s3: "and install SimHub",
+				    s4: "Open the mini-program -> Enable simhub device.",
+				    s5: "Use a",
+				    s6: "Type-C data cable",
+				    s7: "to connect to the computer",
+				    s8: "The original",
+				    s9: "Sonic Visualization | Revbeat Music",
+				    s10: "function will be changed to",
+				    s11: "SimHub Game",
 				}
 			}
 		}
@@ -231,7 +242,18 @@ window.i18nTranslations = {
 				desc:"教您如何接入喜欢的游戏遥测",
 				games:"此配置文件已测试通过的游戏",
 				base_step:{
-					title:"SIMHUB遥测功能开启前置条件"
+					title:"SIMHUB遥测功能开启前置条件",
+					s1:"升级固件到v1.0.5及以上",
+					s2:"下载",
+					s3:"并安装SimHub",
+					s4:"打开小程序->开启simhub设备.",
+					s5:"使用一根",
+					s6:"type-c数据线",
+					s7:"插入电脑",
+					s8:"原",
+					s9:"声浪可视化|仪表盘",
+					s10:"功能,变更为",	
+					s11:"simhub游戏模式",																							
 				}
 			}
 		}
