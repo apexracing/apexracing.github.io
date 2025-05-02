@@ -141,7 +141,7 @@ window.i18nTranslations = {
 				},
 				step4: {
 				title: "Step 4",
-					s1: "Select the Serial port dropdown -> Choose the last of the two ApexRacing SpeedIM COM ports.",
+					s1: "Select Serial Port dropdown -> 2 ApexRacing SpeedIM COM ports (one is the program log output port). Normally, select the last one. If no data is received, switch to the other COM port.",
 					s2: "Turn on the device switch"
 				},
 				step5: {
@@ -310,7 +310,7 @@ window.i18nTranslations = {
 				},
 				step4:{
 					title:"步骤四",
-					s1:"选择串口(Serial port)下拉框->2个ApexRacing SpeedIM的COM端口,选择最后一个.",
+					s1:"选择串口(Serial port)下拉框->2个ApexRacing SpeedIM的COM端口（其中一个是程序输出日志端口）,正常选择最后一个,如果没有数据,请切换另外一个COM端口.",
 					s2:"开启设备开关"
 				},
 				step5:{
